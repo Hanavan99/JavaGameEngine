@@ -50,17 +50,17 @@ public interface Graphics<M extends Matrix<M, V>, V extends Vector<V>> {
 
 	void drawString(V position, String text);
 
-	void drawBitmap(V position, Bitmap bitmap);
+	void drawBitmap(V position, Texture bitmap);
 
-	void drawBitmap(V position, Bitmap bitmap, Color colorMask);
+	void drawBitmap(V position, Texture bitmap, Color colorMask);
 
-	void drawBitmap(V position, V size, Bitmap bitmap);
+	void drawBitmap(V position, V size, Texture bitmap);
 
-	void drawBitmap(V position, V size, Bitmap bitmap, Color colorMask);
+	void drawBitmap(V position, V size, Texture bitmap, Color colorMask);
 
-	void drawBitmap(V position, V size, V srcPosition, V srcSize, Bitmap bitmap);
+	void drawBitmap(V position, V size, V srcPosition, V srcSize, Texture bitmap);
 
-	void drawBitmap(V position, V size, V srcPosition, V srcSize, Bitmap bitmap, Color color);
+	void drawBitmap(V position, V size, V srcPosition, V srcSize, Texture bitmap, Color color);
 
 	Color getColor();
 
